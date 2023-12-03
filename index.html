@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Natnawat | Workshop #HTML-FORM</title>
 </head>
+
 <body>
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <h1>Workshop #HTML-FORM</h1>
     <form>
-        <div class="name">ชื่อ<input type="text"></div>
-        <div class="surename">สกุล<input type="text"></div>
-        <div class="birth">วัน/เดือน/ปีเกิด<input type="date"></div>
-        <div class="age">อายุ<input type="number"></div>
-        <div class="sex">เพศ
-            <input type="radio" id="ch-male" name="sex" value="M">
-            <label for="ch-male">ชาย</label><br>
-            <input type="radio" id="ch-female" name="sex" value="F">
-            <label for="ch-female">หญิง</label><br>
-        </div>
-        <div class="picture">รูป<input type="file" id="picture" name=""></div>
-        <div class="address">ที่อยู่<textarea></textarea></div>
-        <div class="fav-color">สีที่ชอบ<input type="text"></div>
-        <div class="fav-music">nแนวเพลงที่ชอบ<input type="text"></div>
+        <table>
+            <tr>
+                <td><label>ชื่อ</label></td>
+                <td><input type="text" placeholder="enter your name. (Natnawat)"></td>
+            </tr>
+            <tr>
+                <td><label>สกุล</label></td>
+                <td><input type="text" placeholder="enter your last name. (Panisarasirikul)"></td>
+            </tr>
+            <tr>
+                <td><label>วัน/เดือน/ปีเกิด</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label>อายุ</label></td>
+                <td><input type="number" placeholder="enter your age. (9)"></td>
+            </tr>
+            <tr>
+                <td><label>เพศ</label></td>
+                <td>
+                    <input type="radio" id="ch-male" name="sex" value="M">
+                    <label for="ch-male">ชาย</label>
+                    <input type="radio" id="ch-female" name="sex" value="F">
+                    <label for="ch-female">หญิง</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>รูป</label></td>
+                <td><input type="file" id="picture" name=""></td>
+            </tr>
+            <tr>
+                <td><label>ที่อยู่</label></td>
+                <td><textarea cols="40" rows="4" placeholder="enter your address."></textarea></td>
+            </tr>
+            <tr>
+                <td><label>สีที่ชอบ</label></td>
+                <td>
+                    <select id="fav-color">
+                        <option value="purple">ม่วง</option>
+                        <option value="blue">น้ำเงิน</option>
+                        <option value="skyblue">ฟ้า</option>
+                        <option value="green">เขียว</option>
+                        <option value="yellow">เหลือง</option>
+                        <option value="orange">ส้ม</option>
+                        <option value="red">แดง</option>
+                        <option value="pink">ชมพู</option>
+                        <option value="gray">เทา</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>แนวเพลงที่ชอบ</label>
+                </td>
+                <td>
+                    <input type="radio" id="ch-forlife" name="fav-music" value="forlife">
+                    <label for="ch-forlife">เพื่อชีวิต</label>
+                    <input type="radio" id="ch-country" name="fav-music" value="country">
+                    <label for="ch-country">ลูกทุ่ง</label>
+                    <input type="radio" id="ch-other" name="fav-music" value="other">
+                    <label for="ch-other">อื่นๆ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="accept">
+                    <label for="accept">ยินยอมให้เก็บข้อมูล</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="reset">Reset</button></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </table>
     </form>
 </body>
-</html>
-</body>
+
 </html>
