@@ -1,0 +1,43 @@
+:root {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.form {
+    background-color: white;
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+td:nth-child(odd) {
+    text-align: right;
+}
+
+input, textarea, select, button {
+    place-self: center;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    font-size: medium;
+    height:fit-content;
+    width: fit-content;
+    padding: 0.25rem;
+}
+
+input:hover, textarea:hover, select:hover, button:hover {
+    background-color: aliceblue;
+}
+
+input#picture {
+    border-radius: 0;
+    background-color: white;
+}

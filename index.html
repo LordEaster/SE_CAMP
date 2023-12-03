@@ -11,83 +11,85 @@
 </head>
 
 <body>
-    <h1>Workshop #HTML-FORM</h1>
-    <form>
-        <table>
-            <tr>
-                <td><label>ชื่อ</label></td>
-                <td><input type="text" placeholder="enter your name. (Natnawat)"></td>
-            </tr>
-            <tr>
-                <td><label>สกุล</label></td>
-                <td><input type="text" placeholder="enter your last name. (Panisarasirikul)"></td>
-            </tr>
-            <tr>
-                <td><label>วัน/เดือน/ปีเกิด</label></td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td><label>อายุ</label></td>
-                <td><input type="number" placeholder="enter your age. (9)"></td>
-            </tr>
-            <tr>
-                <td><label>เพศ</label></td>
-                <td>
-                    <input type="radio" id="ch-male" name="sex" value="M">
-                    <label for="ch-male">ชาย</label>
-                    <input type="radio" id="ch-female" name="sex" value="F">
-                    <label for="ch-female">หญิง</label>
-                </td>
-            </tr>
-            <tr>
-                <td><label>รูป</label></td>
-                <td><input type="file" id="picture" name=""></td>
-            </tr>
-            <tr>
-                <td><label>ที่อยู่</label></td>
-                <td><textarea cols="40" rows="4" placeholder="enter your address."></textarea></td>
-            </tr>
-            <tr>
-                <td><label>สีที่ชอบ</label></td>
-                <td>
-                    <select id="fav-color">
-                        <option value="purple">ม่วง</option>
-                        <option value="blue">น้ำเงิน</option>
-                        <option value="skyblue">ฟ้า</option>
-                        <option value="green">เขียว</option>
-                        <option value="yellow">เหลือง</option>
-                        <option value="orange">ส้ม</option>
-                        <option value="red">แดง</option>
-                        <option value="pink">ชมพู</option>
-                        <option value="gray">เทา</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>แนวเพลงที่ชอบ</label>
-                </td>
-                <td>
-                    <input type="radio" id="ch-forlife" name="fav-music" value="forlife">
-                    <label for="ch-forlife">เพื่อชีวิต</label>
-                    <input type="radio" id="ch-country" name="fav-music" value="country">
-                    <label for="ch-country">ลูกทุ่ง</label>
-                    <input type="radio" id="ch-other" name="fav-music" value="other">
-                    <label for="ch-other">อื่นๆ</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="accept">
-                    <label for="accept">ยินยอมให้เก็บข้อมูล</label>
-                </td>
-            </tr>
-            <tr>
-                <td><button type="reset">Reset</button></td>
-                <td><button type="submit">Submit</button></td>
-            </tr>
-        </table>
-    </form>
+    <h1 style="text-align: center;">Workshop #HTML-FORM</h1>
+    <div class="form">
+        <form>
+            <table>
+                <tr>
+                    <td><label>ชื่อ</label></td>
+                    <td><input type="text" name="name" placeholder="กรอกชื่อ"></td>
+                </tr>
+                <tr>
+                    <td><label>สกุล</label></td>
+                    <td><input type="text" name="lastname" placeholder="กรอกนามสกุล"></td>
+                </tr>
+                <tr>
+                    <td><label>วัน/เดือน/ปีเกิด</label></td>
+                    <td><input type="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td><label>อายุ</label></td>
+                    <td><input type="number" name="age" placeholder="กรอกอายุ"></td>
+                </tr>
+                <tr>
+                    <td><label>เพศ</label></td>
+                    <td>
+                        <input type="radio" id="gender-male" name="gender" value="male">
+                        <label for="gender-male">ชาย</label>
+                        <input type="radio" id="gender-female" name="gender" value="female">
+                        <label for="gender-female">หญิง</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>รูป</label></td>
+                    <td><input type="file" id="picture" name="picture"></td>
+                </tr>
+                <tr>
+                    <td><label>ที่อยู่</label></td>
+                    <td><textarea id="address" cols="40" rows="4" name="address" placeholder="กรอกที่อยู่"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>สีที่ชอบ</label></td>
+                    <td>
+                        <select id="fav-color" name="fav-color">
+                            <option selected="true" disabled="disabled">เลือก</option> 
+                            <option value="purple">ม่วง</option>
+                            <option value="blue">น้ำเงิน</option>
+                            <option value="skyblue">ฟ้า</option>
+                            <option value="green">เขียว</option>
+                            <option value="yellow">เหลือง</option>
+                            <option value="orange">ส้ม</option>
+                            <option value="red">แดง</option>
+                            <option value="pink">ชมพู</option>
+                            <option value="gray">เทา</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>แนวเพลงที่ชอบ</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="genre-forlife" name="genre" value="forlife">
+                        <label for="genre-forlife">เพื่อชีวิต</label>
+                        <input type="radio" id="genre-country" name="genre" value="country">
+                        <label for="genre-country">ลูกทุ่ง</label>
+                        <input type="radio" id="genre-other" name="genre" value="other">
+                        <label for="genre-other">อื่นๆ</label>
+                    </td>
+                </tr> 
+            </table><br>
+            <div style="display: flex; justify-content: center;">
+                <input type="checkbox" id="form-accept" name="accept">
+                <label for="form-accept">ยินยอมให้เก็บข้อมูล</label>
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center; gap: 1rem;">
+                <button type="reset" style="background-color: white;">Reset</button>
+                <button type="submit" style="background-color: #A6CF98;">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
