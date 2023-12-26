@@ -17,7 +17,7 @@
             ?>
         </h1>
         <div style="display: flex; ">
-            <input type="number" name="multi" value="">
+            <input type="number" name="multi" placeholder="Enter your multiply">
             <button type="submit">submit</button>
         </div>
             <div class="multiple-table">
