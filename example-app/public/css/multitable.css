@@ -1,0 +1,45 @@
+table {
+    width: 90%;
+    height: 265px;
+    text-align: center;
+    border-color: transparent;
+}
+
+.multiple-table {
+    height: 300px;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+button {
+    width: 100%;
+    background-color: transparent;
+    border-color: #000;
+    border-radius: 0.5rem;
+}
+
+td {
+    text-align: center !important;
+}
+
+tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+tr {
+    border-radius: 0.5rem;
+}
+
+tr:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.multiple-space {
+    background-color: white;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

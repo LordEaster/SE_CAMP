@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+:root {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.form {
+    background-color: white;
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+td:nth-child(odd) {
+    text-align: right;
+}
+
+input, textarea, select, button {
+    place-self: center;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    font-size: medium;
+    height:fit-content;
+    width: fit-content;
+    padding: 0.25rem;
+}
+
+input:hover, textarea:hover, select:hover, button:hover {
+    background-color: aliceblue;
+}
+
+input#picture {
+    border-radius: 0;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* style for css101.html */
+.box {
+    width: 50vw;
+    height: 50vw;
+    background-color: #87c38f;
+    border-color: #226f54;
+    border-width: 0.5rem;
+    border-radius: 2rem;
+    border-style: dotted;
+    line-height: 50vw;
+    margin-top: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    color: #43291f;
+    font-size: larger;
+
+    .sub_box {
+        font-size: 0;
+        line-height: 0;
+    }
+
+    a {
+        color: #f4f0bb;
+    }
+
+}
+
+.box:hover {
+    box-shadow: 0 0 2rem #43291f;
+    font-size: 0;
+    line-height: 0;
+
+    .sub_box {
+        width: 20vw;
+        height: 20vw;
+        margin: 5%;
+        border-radius: 2rem;
+        color: #f4f0bb;
+    }
+
+    #box_1 {
+        float: left;
+        background-color: #43291f;
+    }
+
+    #box_2 {
+        float: right;
+        background-color: #da2c38;
+    }
+
+    #box_3 {
+        float: left;
+        background-color: #da2c38;
+    }
+
+    #box_4 {
+        float: right;
+        background-color: #43291f;
+    }
+
+    .sub_box:hover {
+        font-size: large;
+        line-height: 20vw;
+        box-shadow: 0 0 2rem #f4f0bb;
+    }
+}
