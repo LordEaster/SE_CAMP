@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http;
 use Illuminate\Http\Request;
+use App\Http\Controllers\myController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,8 @@ Route::get('/', function () {
     return 'hi, yamroll';
 });
 
+Route::get('/my-control', [myController::class, 'index']);
+
 
 Route::get('/multi-table', function () {
     return view('multiple-table.multi-landing');
@@ -28,3 +31,9 @@ Route::post('/multi-table', function (Request $req) {
     $data['multiply'] = $req -> input ('multiply');
     return view('multiple-table.multi-table', $data);
 });
+
+Route::get('/home', function() {
+    return view('layouts.home');
+});
+
+?>
