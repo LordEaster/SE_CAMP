@@ -10,11 +10,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>SE CAMP | @yield('title', '#12')</title>
 
   <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="{{ url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback') }}">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{ url('assets/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{ url('assets/dist/css/adminlte.min.css') }}">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -176,6 +176,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="#" class="d-block">Natnawat Panisarasirikul</a>
         </div>
       </div>
+      <nav class="pb-2">
+        <ul class="nav nav-pills nav-sidebar flex-column">
+          <li class="nav-item">
+            <a href="/logout" class="nav-link btn-danger" style="color: white">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              <p>
+                Log out
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
       <!-- SidebarSearch Form -->
       <div class="form-inline">
@@ -287,7 +299,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert2 -->
+<script src="plugins/sweetalert2/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="../../plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
+@yield('js')
 </body>
 </html>

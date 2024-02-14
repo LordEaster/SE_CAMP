@@ -3,12 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class myController extends Controller
+class MyController extends Controller
 {
-    private $myvar = "hi";
+    private $myvar = "Hello World!";
 
-    public function index() {
-        echo $this->myvar;
+    function __construct() //MyController
+    {
+
+    }
+
+    public function index(){
+        return view('home');
+    }
+
+    public function store(Request $req){
+        $data['myinput'] = $req->input('myinput');
+        return view('myroute', $data);
     }
 }
